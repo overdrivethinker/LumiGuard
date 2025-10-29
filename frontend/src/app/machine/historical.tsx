@@ -85,13 +85,27 @@ export default function HistoricalData() {
 			"Idle Time Duration",
 			"Error Time %",
 			"Error Time Duration",
+			"Total Errors",
 			"Unknown Time %",
 			"Unknown Time Duration",
-			"Operating Time",
+			"Operating Time %",
+			"Operating Time Duration",
 			"OEE %",
 			"Planned Time",
-			"Shift Type",
+			"Morning Shift",
+			"Night Shift",
 		];
+		const calculateUtilization = (
+			totalSeconds: string,
+			plannedSeconds: string
+		): string => {
+			const total = parseFloat(totalSeconds || "0");
+			const planned = parseFloat(plannedSeconds || "0");
+
+			if (planned === 0) return "0";
+
+			return ((total / planned) * 100).toFixed(2);
+		};
 
 		const csvData = data.per_date.map((row) => {
 			const date = new Date(row.date);
@@ -99,7 +113,12 @@ export default function HistoricalData() {
 			const month = date.toLocaleDateString("en-US", { month: "long" });
 			const year = date.getFullYear();
 			const formattedDate = `${day}-${month}-${year}`;
-
+			const utilization = parseFloat(
+				calculateUtilization(
+					row.total_seconds || "0",
+					row.planned_production_seconds
+				)
+			);
 			return [
 				formattedDate,
 				row.green_percent,
@@ -108,13 +127,14 @@ export default function HistoricalData() {
 				formatSeconds(row.amber_seconds),
 				row.red_percent,
 				formatSeconds(row.red_seconds),
+				row.red_count,
 				row.unknown_percent,
 				formatSeconds(row.unknown_seconds),
+				utilization,
 				formatSeconds(row.total_seconds || "0"),
 				row.availability_oee,
 				formatSeconds(row.planned_production_seconds),
 				row.shift_type,
-				row.red_count,
 			];
 		});
 
