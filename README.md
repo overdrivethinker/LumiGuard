@@ -41,7 +41,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/lumiguard.git
+git clone https://github.com/overdrivethinker/lumiguard.git
 cd lumiguard
 ```
 
@@ -140,25 +140,6 @@ Tracks the percentage of planned production time that equipment is actually oper
 **Availability = (Operating Time / Planned Production Time) × 100%**
 
 Example: Machine scheduled for 8 hours, downtime 1 hour → Availability = 87.5%
-
----
-
-## 🗂 Project Structure
-
-```
-lumiguard/
-├── backend/          # API, MQTT client, database handlers
-│   ├── index.js
-│   ├── routes/
-│   ├── mqtt/
-│   ├── database/
-│   └── ...
-├── frontend/         # Web UI (React + Vite)
-│   ├── src/
-│   ├── public/
-│   └── ...
-├── README.md
-```
 
 ---
 
