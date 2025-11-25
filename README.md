@@ -1,4 +1,4 @@
-# 💡 LumiGuard /ˈluː.mi.ɡɑːrd/
+<img width="1912" height="962" alt="screenshot-1764055845781" src="https://github.com/user-attachments/assets/15229483-ec66-479d-9c42-b2db9a1e4df0" /># 💡 LumiGuard /ˈluː.mi.ɡɑːrd/
 
 **LumiGuard** is a real-time monitoring and management platform for industrial tower lights and OEE (Overall Equipment Effectiveness) performance calculation. Built with **ESP32** microcontrollers, it communicates via **MQTT (EMQX broker)** and features a powerful backend with **Node.js** and a modern frontend using **React (Vite + TypeScript)**.
 
@@ -143,8 +143,11 @@ Example: Machine scheduled for 8 hours, downtime 1 hour → Availability = 87.5%
 ---
 
 ## 📷 Screenshots
-
-> ASAP
+<img width="1912" height="962" alt="screenshot-1764055891695" src="https://github.com/user-attachments/assets/c3571233-e29c-4ce4-8b66-8b714b3d3685" />
+<img width="1912" height="962" alt="screenshot-1764055743275" src="https://github.com/user-attachments/assets/2ad516fa-9fab-4f21-9dac-ccdc82441049" />
+<img width="1912" height="962" alt="screenshot-1764055797021" src="https://github.com/user-attachments/assets/4c57f831-3eb2-476f-a29a-52d74d8a8d19" />
+<img width="1912" height="962" alt="screenshot-1764055845781" src="https://github.com/user-attachments/assets/c9645e17-9ab9-4920-a239-c3e4b30ad89a" />
+<img width="1912" height="962" alt="screenshot-1764055857217" src="https://github.com/user-attachments/assets/f7e79cfe-6b16-4baa-9618-ba1e8d39e970" />
 
 ---
 
@@ -155,7 +158,6 @@ Feel free to use, modify, and distribute as needed.
 
 ---
 
-## 🤝 Contribution
+## 👥 Contributors
 
-Contributions are welcome!  
-Feel free to open issues, fork the repo, and submit pull requests.
+- PSI Engineering
