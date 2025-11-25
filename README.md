@@ -1,4 +1,4 @@
-<img width="1912" height="962" alt="screenshot-1764055845781" src="https://github.com/user-attachments/assets/15229483-ec66-479d-9c42-b2db9a1e4df0" /># 💡 LumiGuard /ˈluː.mi.ɡɑːrd/
+# 💡 LumiGuard /ˈluː.mi.ɡɑːrd/
 
 **LumiGuard** is a real-time monitoring and management platform for industrial tower lights and OEE (Overall Equipment Effectiveness) performance calculation. Built with **ESP32** microcontrollers, it communicates via **MQTT (EMQX broker)** and features a powerful backend with **Node.js** and a modern frontend using **React (Vite + TypeScript)**.
 
