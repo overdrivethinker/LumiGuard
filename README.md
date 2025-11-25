@@ -12,7 +12,7 @@
 -   **Node.js (v18+)**
 -   **EMQX Broker (MQTT)**
 -   **Redis**
--   **PostgreSQL**
+-   **Relational Databases (SQL)**
 
 ---
 
@@ -26,7 +26,6 @@
 ### 🛠️ Backend
 -   **Node.js** + **Express.js**
 -   **Knex.js** (SQL query builder)
--   **PostgreSQL** (relational database)
 -   **Socket.IO** (WebSocket for real-time data)
 -   **Redis** (caching & fast data access)
 
